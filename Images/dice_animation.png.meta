@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -123,6 +129,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -135,6 +142,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -147,6 +155,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -667,33 +676,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dice_animation_1: 480899171
-      dice_animation_22: 580493421
-      dice_animation_16: 59444144
-      dice_animation_11: -620838564
-      dice_animation_5: 1782634350
-      dice_animation_4: -1656902605
-      dice_animation_7: -1301886778
-      dice_animation_2: 1628883817
-      dice_animation_13: 694560120
-      dice_animation_20: -1463931716
-      dice_animation_6: -1969160537
-      dice_animation_12: 1142318897
-      dice_animation_9: 1745598978
-      dice_animation_8: -1729145744
-      dice_animation_14: 1022497546
-      dice_animation_17: 1042377461
-      dice_animation_23: 746022521
-      dice_animation_19: -1811731815
-      dice_animation_15: -551810120
-      dice_animation_10: -2029498511
-      dice_animation_3: -1066708157
       dice_animation_0: -599530899
-      dice_animation_21: 749757824
+      dice_animation_1: 480899171
+      dice_animation_10: -2029498511
+      dice_animation_11: -620838564
+      dice_animation_12: 1142318897
+      dice_animation_13: 694560120
+      dice_animation_14: 1022497546
+      dice_animation_15: -551810120
+      dice_animation_16: 59444144
+      dice_animation_17: 1042377461
       dice_animation_18: 222829525
-  spritePackingTag: 
+      dice_animation_19: -1811731815
+      dice_animation_2: 1628883817
+      dice_animation_20: -1463931716
+      dice_animation_21: 749757824
+      dice_animation_22: 580493421
+      dice_animation_23: 746022521
+      dice_animation_3: -1066708157
+      dice_animation_4: -1656902605
+      dice_animation_5: 1782634350
+      dice_animation_6: -1969160537
+      dice_animation_7: -1301886778
+      dice_animation_8: -1729145744
+      dice_animation_9: 1745598978
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
