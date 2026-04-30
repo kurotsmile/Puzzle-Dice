@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Game_handle : MonoBehaviour
 {
     public Carrot.Carrot carrot;
+    public IronSourceAds ads;
     public Dice_Manager dice_manager;
     public Anim_obj anim_canvas;
     public GameObject panel_menu;
@@ -26,6 +27,8 @@ public class Game_handle : MonoBehaviour
     void Start()
     {
         this.carrot.Load_Carrot(this.check_exit_app);
+        this.ads.On_Load();
+        this.carrot.act_buy_ads_success=this.ads.RemoveAds;
         this.panel_menu.SetActive(true);
         this.panel_play.SetActive(false);
         this.panel_customer.SetActive(false);
@@ -78,7 +81,7 @@ public class Game_handle : MonoBehaviour
         this.carrot.game.update_scores_player(this.dice_manager.get_scores());
         this.play_sound(2);
         this.panel_gameover.SetActive(true);
-        this.carrot.ads.show_ads_Interstitial();
+        this.ads.show_ads_Interstitial();
     }
 
     public void play_sound(int index_sound)
@@ -88,7 +91,7 @@ public class Game_handle : MonoBehaviour
 
     public void btn_show_setting()
     {
-        this.carrot.ads.Destroy_Banner_Ad();
+        this.ads.DestroyBannerAd();
         Carrot.Carrot_Box box_setting=this.carrot.Create_Setting();
         box_setting.set_act_before_closing(act_after_close_setting);
     }
@@ -104,7 +107,7 @@ public class Game_handle : MonoBehaviour
             this.sound[4].Play();
         else
             this.sound[4].Stop();
-        this.carrot.ads.create_banner_ads();
+        this.ads.ShowBannerAd();
     }
 
     public void btn_play(int index_row_and_col)
@@ -113,7 +116,7 @@ public class Game_handle : MonoBehaviour
         this.panel_play.SetActive(true);
         this.dice_manager.load(index_row_and_col);
         this.carrot.play_sound_click();
-        this.carrot.ads.show_ads_Interstitial();
+        this.ads.show_ads_Interstitial();
         this.anim_canvas.start_anim_play();
     }
 
@@ -134,7 +137,7 @@ public class Game_handle : MonoBehaviour
         this.panel_menu.SetActive(true);
         this.panel_gameover.SetActive(false);
         this.carrot.play_sound_click();
-        this.carrot.ads.show_ads_Interstitial();
+        this.ads.show_ads_Interstitial();
     }
 
     public void btn_show_model_customer()
@@ -158,7 +161,7 @@ public class Game_handle : MonoBehaviour
 
         if ((n_row < 4) || (n_col < 4))
         {
-            this.carrot.show_msg("Dice Puzzle", "The game cannot be started when the number of rows or columns of dice is less than 4 units!", Carrot.Msg_Icon.Error);
+            this.carrot.Show_msg("Dice Puzzle", "The game cannot be started when the number of rows or columns of dice is less than 4 units!", Carrot.Msg_Icon.Error);
             return;
         }
         this.dice_manager.load(n_row, n_col);
